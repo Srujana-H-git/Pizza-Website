@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ====================================FAVICON=================================== -->
+    <link
+      rel="shortcut icon" href="favicon.png" type="image/x-icon"/>
+
+    <!--=============== REMIXICONS ===============-->
+    <!-- <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"/> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css" integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Responsive pizza website</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">
+                <img src="logo-pizza.svg" alt="image">
+                Pizza
+            </a>
+
+            <!-- <div class="nav__menu " id="nav-menu"  >
+                <ul class="nav__list">
+                    <li>
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="#about" class="nav__link">About Us</a>
+                    </li>
+
+                    <li>
+                        <a href="#popular" class="nav__link">Popular</a>
+                    </li>
+
+                    <li>
+                        <a href="#products" class="nav__link">Products</a>
+                    </li>
+
+                    <li>
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul> -->
+                <!-- close button -->
+                 <div class="nav__close" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                 </div>
+            </div>
+            
+            <!-- Toggle button -->
+             <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-apps-2-fill"></i>
+             </div>
+        </nav>
+    </header>
+    <!-- assets/img/ -->
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home section" id="home">
+        <div class="home__container container grid"> 
+            <div class="home__data">
+                  <h1 class="home__title">Crispy And <br> Delicious Pizzas </h1>
+
+                  <p class="home__description">
+                    Order the best pizzas to end your hunger and make your family moments more memorable, place your order now.
+                  </p>
+                <a href="#products" class="button">Order Pizza Now</a>
+
+                <img src="sticker-pizza.svg" alt="image" class="home__sticker-1">
+                <img src="sticker-leaf.svg" alt="image" class="home__sticker-2">
+            </div>
+
+            <div class="home__images">
+                <img src="home-pizza.png" alt="image" class="home__pizza">
+                <img src="home-board.png" alt="image" class="home__board">
+
+                <img src="home-leaf-1.png" alt="image" class="home__ingredient  home__leaf-1">
+                <img src="home-leaf-2.png" alt="image" class="home__ingredient  home__leaf-2">
+                <img src="home-pepperoni.png" alt="image" class="home__ingredient  home__pepperoni">
+                <img src="home-mushroom.png" alt="image" class="home__ingredient  home__mushroom">
+                <img src="home-olive.png" alt="image" class="home__ingredient  home__olive">
+                <img src="home-tomato.png" alt="image" class="home__ingredient  home__tomato">
+            </div>
+        </div>
+      </section>
+
+      <!--==================== ABOUT ====================-->
+      <section class="about section" id="about">
+        <div class="about__container container grid">
+          <div class="about__data">
+              <h2 class="section__title" style="color: rgb(41, 40, 40);"> Learn More About <br> Our History</h2>
+
+              <p class="about__description">
+                The secret to success is the best ingredients 
+                to make a better pizza. Today we strive for 
+                perfection, just as we have been doing for 15 years 
+                when we first opened the pizzeria in Lima - Peru.
+              </p>
+
+              <a href="#popular" class="button">The Best Pizzas</a>
+
+              <img src="sticker-cheese.svg" alt="image" class="about__sticker">
+          </div>
+
+          <img src="about-img.png" alt="image" class="about__img">
+        </div>
+      </section>
+
+      <!--==================== POPULAR ====================-->
+      <section class="popular section" id="popular">
+        <div class="popular__container container grid">
+          <div class="popular__data">
+            <h2 class="section__title"  style="color: rgb(41, 40, 40);">Discover <br> Popular Orders</h2>
+
+            <p class="popular__description">
+              Select the best prepared and delicious flavors. 
+              We have collected some popular recipes from around 
+              the world for you to choose your favorite.
+            </p>
+          </div>
+
+          <div class="popular__swiper swiper">
+            <img src="popular-dish.png" alt="image" class="popular__dish">
+
+            <div class="swiper-wrapper">
+              <article class="popular__card swiper-slide">
+                <img src="popular-1.png" alt="image" class="popular__img">
+                <h3 class="popular__title">Margherita Pizza</h3>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img src="popular-2.png" alt="image" class="popular__img">
+                <h3 class="popular__title">Mushroom Pizza</h3>
+              </article>
+
+              <article class="popular__card swiper-slide">
+                <img src="popular-3.png" alt="image" class="popular__img">
+                <h3 class="popular__title">Pepperoni Pizza</h3>
+              </article>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!--==================== RECIPE ====================-->
+      <section class="recipe section">
+        <h2 class="section__title"  style="color: rgb(41, 40, 40);">Fresh And <br> Natural ingredients</h2>
+
+        <div class="recipe__container container grid">
+          <div class="recipe__list grid">
+              <div class="recipe__ingredient">
+                <img src="recipe-flour.png" alt="image" class="recipe__image">
+
+                <div>
+                  <h3 class="recipe__name">Flour</h3>
+                  <p class="recipe__description">The best wheat from the field for the best flour</p>
+                </div>
+              </div>
+
+              <div class="recipe__ingredient">
+                <img src="recipe-cheese.png" alt="image" class="recipe__image">
+
+                <div>
+                  <h3 class="recipe__name">Cheese</h3>
+                  <p class="recipe__description">Indulge in a cheese for a healthy future.</p>
+                </div>
+              </div>
+
+              <div class="recipe__ingredient">
+                <img src="recipe-sauces.png" alt="image" class="recipe__image">
+
+                <div>
+                  <h3 class="recipe__name">Sauces</h3>
+                  <p class="recipe__description">Add a touch of salsa to your life and it will taste better.</p>
+                </div>
+              </div>
+
+              <div class="recipe__ingredient">
+                <img src="recipe-tomato.png" alt="image" class="recipe__image">
+
+                <div>
+                  <h3 class="recipe__name">Vegtables</h3>
+                  <p class="recipe__description">Vegetables full of the essence of nature and organic</p>
+                </div>
+              </div>
+              <div class="recipe__ingredient">
+                <img src="recipe-meat.png" alt="image" class="recipe__image">
+
+                <div>
+                  <h3 class="recipe__name">Meats</h3>
+                  <p class="recipe__description">The best fresh meats for your health.</p>
+                </div>
+              </div>
+          </div>
+
+          <img src="recipe-img.png" alt="image" class="recipe__img">
+        </div>
+
+      </section>
+
+      <!--==================== PRODUCTS ====================-->
+      <section class="products section" id="products">
+        <h2 class="section__title"  style="color: rgb(41, 40, 40);">The Most <br> Devoured Pizzas</h2>
+
+        <div class="products__container container grid">
+          <article class="products__card">
+            <img src="product-1.png" alt="" class="products__img">
+
+            <h3 class="products__name">Vegetarian <br> Pizza </h3>
+            <span class="produts__price">$15</span>
+
+            <button class="products__button">
+              <i class="ri-shopping-bag-3-fill"></i>
+            </button>
+          </article>
+
+          <article class="products__card">
+            <img src="product-2.png" alt="" class="products__img">
+
+            <h3 class="products__name">Pepperoni <br> Pizza</h3>
+            <span class="produts__price">$10</span>
+
+            <button class="products__button">
+              <i class="ri-shopping-bag-3-fill"></i>
+            </button>
+          </article>
+
+          <article class="products__card">
+            <img src="product-3.png" alt="" class="products__img">
+
+            <h3 class="products__name">Margherita <br> Pizza</h3>
+            <span class="produts__price">$12</span>
+
+            <button class="products__button">
+              <i class="ri-shopping-bag-3-fill"></i>
+            </button>
+          </article>
+
+          <article class="products__card">
+            <img src="product-4.png" alt="" class="products__img">
+
+            <h3 class="products__name">Mushroom <br>Pizza</h3>
+            <span class="produts__price">$17</span>
+
+            <button class="products__button">
+              <i class="ri-shopping-bag-3-fill"></i>
+            </button>
+          </article>
+
+          <article class="products__card">
+            <img src="product-5.png" alt="" class="products__img">
+
+            <h3 class="products__name">Italian <br>Pizza</h3>
+            <span class="produts__price">$10</span>
+
+            <button class="products__button">
+              <i class="ri-shopping-bag-3-fill"></i>
+            </button>
+          </article>
+
+          
+        </div>
+      </section>
+
+      <!--==================== CONTACT ====================-->
+      <section class="contact section" id="contact">
+        <div class="contact__container container grid">
+          <div class="contact__data">
+                <h2 class="section__title" >Contact Now</h2>
+
+                <div class="contact__info grid">
+                  <div>
+                    <h3 class="contact title" style="color: white;">Write Us</h3>
+
+                    <div class="contact__social">
+                      <a href="" target="_blank" class="contact__social-link"></a>
+                        <i class="ri-whatsapp-line"></i>
+                      <a href="" target="_blank" class="contact__social-link"></a>
+                         <i class="ri-messenger-fill"></i>
+                      <a href="" target="_blank" class="contact__social-link"></a>
+                         <i class="ri-telegram-2-fill"></i>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h3 class="contact title"style="color: white;">Delivery</h3>
+
+                    <address class="contact__address">
+                      +00-987-7654-321 <br>
+                      +91 8056974125
+                    </address>
+                  </div>
+
+                  <div>
+                    <h3 class="contact title" style="color: white;">Location </h3>
+
+                    <address class="contact__address">
+                      Lima - Sun City -Peru <br>
+                      Av. Moon #4321
+                    </address>
+
+                    <a href="https://www.google.com/maps/place/PizzaExpress" target="_blank" class="contact__map">
+                      <i class="ri-map-pin-fill"></i>
+                      <span>View on Map</span>
+                    </a>
+                  </div>
+                </div>
+          </div>
+          <div class="contact__image">
+            <img src="contact-img.png" alt="" class="contact__img">
+          </div>
+
+          <img src="sticker-tomato.svg" alt="" class="contact__sticker-1">
+          <img src="sticker-mushroom.svg" alt="" class="contact__sticker-2">
+          <img src="sticker-onion.svg" alt="" class="contact__sticker-3">
+        </div>
+      </section>
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer">
+        <div class="footer__container container grid">
+            <a href="" class="footer__logo">Pizza</a>
+
+            <div class="footer__content grid">
+              <div>
+                <h3 class="footer__title">Social</h3>
+
+                <div class="footer__social">
+                  <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                    <i class="ri-facebook-circle-line"></i>
+                  </a>
+
+                  <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                    <i class="ri-instagram-fill"></i>
+                  </a>
+
+                  <a href="https://www.twitter.com/" target="_blank" class="footer__social-link">
+                    <i class="ri-twitter-x-fill"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div>
+                <h3 class="footer__title">Payment Methods</h3>
+
+                <div class="footer__pay">
+                  <img src="footer-card-1.png" alt="image" class="footer__pay-img">
+                  <img src="footer-card-2.png" alt="image" class="footer__pay-img">
+                  <img src="footer-card-3.png" alt="image" class="footer__pay-img">
+                  <img src="footer-card-4.png" alt="image" class="footer__pay-img">
+                </div>
+              </div>
+
+              <div>
+                <h3 class="footer__title">Subscribe For Discounts</h3>
+
+                <form action="" class="footer__form">
+                  <input type="email" placeholder="Email" class="footer__input">
+                  <button class="footer__button button">Subscribe</button>
+                </form>
+              </div>
+            </div>
+        </div>
+
+        <div class="footer__policy">
+            <a href="" class="footer__link">Terms & Conditions</a>
+            <a href="" class="footer__link">Privacy Policy</a>
+
+        </div>
+
+        <span class="footer__copy">
+          &#169; All Rights Reserved By Srujana 
+        </span>
+
+    </footer>
+
+    <!--========== SCROLL UP ==========-->
+      <a href="" class="scrollup" id="scroll-up">
+        <i class="ri-arrow-up-line"></i>
+      </a>
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/scrollreveal.min.js"></script>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
